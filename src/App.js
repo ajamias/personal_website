@@ -5,34 +5,46 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <br></br>
-        <p>
-          Hello! I am Austin
-        </p>
-
-        <div className="pfp-border">
-          <img src={profile_picture} className="pfp" alt="profile_picture" />
-        </div>
-        <br></br>
-
-        <div className="venn-diagram">
-          <div className="left-circle">
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            hey cutie 😎
-          </div>
-          <div className="right-circle">
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            how u doin 🥴
-          </div>
-        </div>
-
+        Hello! I am Austin
       </header>
+
+      <div className="pfp-border">
+        <img src={profile_picture} className="pfp" alt="profile_picture" />
+      </div>
+
+      <div className="summary-border">
+        <div className="summary">
+          <ul>
+            <li>summary</li>
+            <li>will</li>
+            <li>go</li>
+            <li>here</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="venn-diagram">
+        <div className="left-circle">
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          hey cutie 😎
+        </div>
+        <div className="right-circle">
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          how u doin 🥴
+        </div>
+      </div>
+
+
       <div className="contact-info">
         <a
           className="App-link"
