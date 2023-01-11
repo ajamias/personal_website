@@ -5,12 +5,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Hello! I am Austin
+        <div>
+          <span className="greeting">Hello! I am</span> <span className="name">Austin</span>
+        </div>
+        <div className="pfp-border">
+          <img src={profile_picture} className="pfp" alt="profile_picture" />
+        </div>
       </header>
 
-      <div className="pfp-border">
-        <img src={profile_picture} className="pfp" alt="profile_picture" />
-      </div>
 
       <div className="summary-border">
         <div className="summary">
