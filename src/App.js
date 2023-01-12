@@ -1,81 +1,59 @@
 import profile_picture from './pfp.png'
+//import linkedin_logo from './LinkedIn.png'
 import './App.css';
+import React from 'react';
+import Menu from "./Menu.js"
+  
+class App2 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "Austin",
+    };
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          <span className="greeting">Hello! I am</span> <span className="name">Austin</span>
+  change_word = () => {
+    this.setState({name_state: this.state.name_state + 1})
+    switch (this.state.name) {
+      case "Austin":
+        this.setState({name: "Student"});
+        break;
+      case "Student":
+        this.setState({name: "Software Engineer"});
+        break;
+      case "Software Engineer":
+        this.setState({name: "Machine Learning"});
+        break;
+      case "Machine Learning":
+        this.setState({name: "Austin"});
+        break;
+      default:
+        this.setState({name: "Austin"});
+        break;
+    }
+  }
+  
+
+  render() {
+    return (
+      <div className="App">
+        <Menu />
+
+        <div className="greeting-container">
+          <div className="greeting">
+            Hello! &nbsp;I'm
+            &nbsp;
+          </div>
+          <div className="name" onClick={this.change_word}>
+            {this.state.name}
+          </div>
+            <img src={profile_picture} className="pfp" alt="profile"></img>
         </div>
-        <div className="pfp-border">
-          <img src={profile_picture} className="pfp" alt="profile_picture" />
-        </div>
-      </header>
 
-
-      <div className="summary-border">
-        <div className="summary">
-          <ul>
-            <li>summary</li>
-            <li>will</li>
-            <li>go</li>
-            <li>here</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="venn-diagram">
-        <div className="left-circle">
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          hey cutie 😎
-        </div>
-        <div className="right-circle">
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          how u doin 🥴
-        </div>
-      </div>
-
-
-      <div className="contact-info">
-        <a
-          className="App-link"
-          href="https://www.linkedin.com/in/austinjamias/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-        <a
-          class="App-link"
-          href="https://github.com/ajamias"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Github  
-        </a>
-        <a
-          class="App-link"
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          secret 🤔
-        </a>
 
       </div>
-    </div>
-  );
+    );
+  }
 }
 
-export default App;
+export default App2;
