@@ -9,21 +9,27 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 5;
+
+    opacity: 0%;
     transition: 0.5s;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .menu-element {
     position: relative;
-    width: 125px;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    width: 15vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
-    font-size: large;
+    font-size: 2vw;
     color: white;
     transition: 0.3s;
 }
@@ -31,9 +37,4 @@ header {
 .menu-element:hover {
     cursor: pointer;
     transform: scale(120%);
-}
-
-@keyframes fade-white {
-    from {background-color: black;}
-    to   {background-color: linear-gradient(white, black);}
 }
