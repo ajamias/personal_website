@@ -37,10 +37,22 @@ class Menu extends React.Component {
     }
   }
 
+  to_about = () => {
+    document.getElementsByClassName("about-body")[0].scrollIntoView({behavior: "smooth"});
+  }
+
+  to_top = () => {
+    document.getElementsByClassName("greeting-container")[0].scrollIntoView({behavior: "smooth"});
+  }
+
   render() {
     return (
       <header>
-        <div className="menu-element" onMouseEnter={() => this.color_header("About")} onMouseLeave={() => this.color_header("off")}>
+        <div className="menu-element" 
+          onMouseEnter={() => this.color_header("About")} 
+          onMouseLeave={() => this.color_header("off")}
+          onClick={() => this.to_about()}
+          >
           <span className="star">{"[ About ]"}</span>
         </div>
         <div className="menu-element" onMouseEnter={() => this.color_header("Education")} onMouseLeave={() => this.color_header("off")}>
@@ -52,7 +64,11 @@ class Menu extends React.Component {
         <div className="menu-element" onMouseEnter={() => this.color_header("Contacts")} onMouseLeave={() => this.color_header("off")}>
           <span className="contacts">{"[ Contacts ]"}</span>
         </div>
-        <div className="menu-element" onMouseEnter={() => this.color_header("Top")} onMouseLeave={() => this.color_header("off")}>
+        <div className="menu-element" 
+          onMouseEnter={() => this.color_header("Top")} 
+          onMouseLeave={() => this.color_header("off")}
+          onClick={() => this.to_top()}
+          >
           <span className="arrow">{"[ Top ]"}</span>
         </div>
       </header>

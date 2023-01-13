@@ -1,0 +1,21 @@
+
+.about-body {
+    position: relative;
+    width: 100vw;
+    height: 96vh;
+    padding-top: 4vh;
+    background-color: rgba(0,0,0,1);
+
+    color: grey;
+}
+
+h1 {
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
