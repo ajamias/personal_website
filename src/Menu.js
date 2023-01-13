@@ -24,7 +24,7 @@ class Menu extends React.Component {
         break;
       case "Contacts":
         document.getElementsByTagName("header")[0].style.background = "rgba(255,255,0,0.2)";
-        document.getElementsByClassName("contacts")[0].innerHTML = "[ ⏎ ]";
+        document.getElementsByClassName("contacts")[0].innerHTML = "[ ✉ ]"; //"[ ⏎ ]";
         break;
       default:
         document.getElementsByTagName("header")[0].style.background = "black";

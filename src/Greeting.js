@@ -23,7 +23,7 @@ class Greeting extends React.Component {
         {opacity: "100%"},
         {opacity: "0%"}
       ],
-        {duration: 500,
+        {duration: 250,
         fill: "forwards"}
       );
       this.setState({count: this.state.count + 1});
@@ -33,7 +33,7 @@ class Greeting extends React.Component {
         {opacity: "0%"},
         {opacity: "100%"}
       ],
-        {duration: 250,
+        {duration: 125,
         fill: "forwards"}
       )
     }
@@ -42,7 +42,7 @@ class Greeting extends React.Component {
   componentDidMount() {
     this.interval = setInterval(() => {
       this.tick();
-    }, 1000);
+    }, 750);
   }
 
   componentWillUnmount() {
@@ -58,7 +58,7 @@ class Greeting extends React.Component {
         this.setState({phrase: "Software Engineer"});
         break;
       case 2:
-        this.setState({phrase: "Machine Learning"});
+        this.setState({phrase: "Developer"});
         break;
       case 3:
         this.setState({phrase: "Austin"});
@@ -73,7 +73,7 @@ class Greeting extends React.Component {
     return (
       <div className="greeting-container">
         <div className="greeting">
-          Hello! &nbsp;I'm
+          Introducing 
           &nbsp;
         </div>
         <div className="name">
