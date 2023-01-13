@@ -13,8 +13,6 @@ class App2 extends React.Component {
         <Menu />
 
         <Greeting />
-
-        <About />
       </div>
     );
   }
