@@ -17,11 +17,8 @@
 
 .greeting {
     position: relative;
-    width: 50vw;
-    background: linear-gradient(white, rgb(64, 64, 64));
-    background-clip: text;
+    width: 54.5vw;
     text-align: right;
-    -webkit-text-fill-color: transparent;
     opacity: 0%;
     animation-name: fade-in, fade-out, ease-up;
     animation-duration: 0.5s, 0.5s, 0.3s;
@@ -31,17 +28,16 @@
 
 .name {
     position: relative;
-    width: 50vw;
-    background: linear-gradient(white, rgb(64, 64, 64));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    width: 45.5vw;
     opacity: 0%;
     cursor: default;
+
     animation-name: fade-in, ease-up;
     animation-duration: 0.5s, 0.3s;
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
 }
+
 
 .pfp {
     position: absolute; 
