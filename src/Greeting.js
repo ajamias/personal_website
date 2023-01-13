@@ -1,5 +1,6 @@
 import React from "react";
 import "./Greeting.css"
+import "./Animations.css"
 import profile_picture from './pfp.png'
 
 class Greeting extends React.Component {
@@ -79,7 +80,10 @@ class Greeting extends React.Component {
         <div className="name">
           {this.state.phrase}
         </div>
-          <img src={profile_picture} className="pfp" alt="profile"></img>
+        <img src={profile_picture} className="pfp" alt="profile"></img>
+        <div className="scroll-arrow">
+          {"⇣"}
+        </div>
       </div>
     );
   }

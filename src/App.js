@@ -1,8 +1,9 @@
 import React from 'react';
 import Menu from "./Menu.js";
+import Greeting from './Greeting.js';
+import About from "./About.js"
 import './App.css';
 import "./Animations.css";
-import Greeting from './Greeting.js';
   
 class App2 extends React.Component {
 
@@ -12,6 +13,8 @@ class App2 extends React.Component {
         <Menu />
 
         <Greeting />
+
+        <About />
       </div>
     );
   }
