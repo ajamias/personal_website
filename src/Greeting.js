@@ -75,9 +75,10 @@ class Greeting extends React.Component {
       <div className="greeting-container">
         <div className="greeting">
           Introducing 
-          &nbsp;
         </div>
         <div className="name">
+          &nbsp;
+          &nbsp;
           {this.state.phrase}
         </div>
         <img src={profile_picture} className="pfp" alt="profile"></img>

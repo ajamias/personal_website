@@ -17,6 +17,11 @@
 
 .greeting {
     position: relative;
+    width: 50vw;
+    background: linear-gradient(white, rgb(64, 64, 64));
+    background-clip: text;
+    text-align: right;
+    -webkit-text-fill-color: transparent;
     opacity: 0%;
     animation-name: fade-in, fade-out, ease-up;
     animation-duration: 0.5s, 0.5s, 0.3s;
@@ -26,7 +31,10 @@
 
 .name {
     position: relative;
-    width: 15vw;
+    width: 50vw;
+    background: linear-gradient(white, rgb(64, 64, 64));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     opacity: 0%;
     cursor: default;
     animation-name: fade-in, ease-up;
