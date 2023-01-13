@@ -5,7 +5,7 @@ import About from "./About.js"
 import './App.css';
 import "./Animations.css";
   
-class App2 extends React.Component {
+class App extends React.Component {
 
   render() {
     return (
@@ -18,4 +18,4 @@ class App2 extends React.Component {
   }
 }
 
-export default App2;
+export default App;
