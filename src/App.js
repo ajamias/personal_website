@@ -2,7 +2,7 @@ import React from 'react';
 import Menu from "./Menu.js";
 import Greeting from './Greeting.js';
 import About from "./About.js";
-import './App.css';
+import Contacts from "./Contacts.js";
 import "./Animations.css";
   
 class App extends React.Component {
@@ -13,6 +13,8 @@ class App extends React.Component {
         <Menu />
         <Greeting />
         <About />
+
+        <Contacts />
       </div>
     );
   }

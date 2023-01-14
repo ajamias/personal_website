@@ -1,6 +1,5 @@
 import React from "react";
 import "./Greeting.css"
-import "./Animations.css"
 import profile_picture from './pfp.png'
 
 class Greeting extends React.Component {
