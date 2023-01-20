@@ -1,5 +1,6 @@
 import React from "react"
 import "./About.css"
+import box from "./box.png"
 
 class About extends React.Component {
 
@@ -8,22 +9,30 @@ class About extends React.Component {
       <div className="about-body">
         <div className="about-left">
           <div className="terminal-bar">
-            <p>bash /Users/austin</p>
+            <p style={{margin: "0%"}}>bash /Users/austin</p>
           </div>
           <div className="intro">
             <p>
               <code>
                 $ cat introduction.txt
                 <br/><br/>
-                Hello! I'm Austin, a sophomore at Boston University
-                studying computer engineering.
+                Hi I'm Austin! I am currently a <b>sophomore</b> at Boston
+                University studying computer engineering with a concentration
+                in machine learning.
                 <br/><br/>
+                $ cat skills.txt
+                <br/><br/>
+                C/C++, Python, MATLAB, Java, Tensorflow, OpenCV, OS,
+                Git, HTML, CSS, Javascript, ReactJS, AWS, Verilog, MIPS
               </code>
             </p>
           </div> 
         </div>
-        <div>
-
+        <div className="about-right">
+          <div className="terminal-bar">
+            <p style={{margin: "0%"}}>bash /Users/austin</p>
+          </div>
+          <img src={box} className="box-image" alt="box"></img>
         </div>
       </div>
     );
